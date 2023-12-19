@@ -1,18 +1,18 @@
-load('iddata-11.mat');
+load('dateTestARX.mat');
 u_id = id.InputData;
 y_id = id.OutputData;
 u_val = val.InputData;
 y_val = val.OutputData;
 
 
-e_id_predictie = zeros(3,3);
-e_id_simulare = zeros(3,3);
-e_val_predictie = zeros(3,3);
-e_val_simulare = zeros(3,3);
-MSE_id_predictie = zeros(3,3);
-MSE_id_simulare = zeros(3,3);
-MSE_val_predictie = zeros(3,3);
-MSE_val_simulare = zeros(3,3);
+e_id_predictie = zeros(length(y_id),1);
+e_id_simulare = zeros(length(y_id),1);
+e_val_predictie = zeros(length(y_val),1);
+e_val_simulare = zeros(length(y_val),1);
+MSE_id_predictie = zeros(4,3);
+MSE_id_simulare = zeros(4,3);
+MSE_val_predictie = zeros(4,3);
+MSE_val_simulare = zeros(4,3);
 min_MSE_id_p = inf;
 min_MSE_id_s = inf;
 min_MSE_val_p = inf;
@@ -137,7 +137,7 @@ for i = 1:length(combinari)
     end
 end
 
-%generare phi id pentru aflarea theta
+%generare phi id pentru aflarea parametrilor theta
 phi_id = zeros(length(y_id),na + nb);
 phiLiniar = zeros(length(y_id),na + nb);
 for i=1:length(y_id)

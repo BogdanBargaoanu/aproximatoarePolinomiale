@@ -1,4 +1,4 @@
-load('proj_fit_08');
+load('dateTestRegresieLiniara.mat');
 M = 15;
 MIN_MSE_val = inf;
 MIN_MSE_id = inf;
