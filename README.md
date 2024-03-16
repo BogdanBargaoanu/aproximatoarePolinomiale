@@ -17,4 +17,4 @@ git clone https://github.com/BogdanBargaoanu/aproximatoarePolinomiale.git
 3. Ruleaza codul.
 
 ## Functionalitate
-Codul ofera flexibilitatea sa fie utilizat cu orice alt semnale de intrare si iesire.
+Codul ofera flexibilitatea sa fie utilizat cu orice alt semnal de intrare si iesire.
